@@ -13,7 +13,7 @@ By default, all weight parameters are 0 and all biases are .5
 ```
   python gsheetnet.py [layers] [args]
   Arguments:
-    --layers: a list of comma separated layer sizes
+    --layers: a list of comma separated layer sizes. no spaces
         (required)
     --bias: True or False, whether to add a bias term
         Default: True
@@ -28,6 +28,6 @@ By default, all weight parameters are 0 and all biases are .5
 
   `python gsheetnet.py [10,20,15,1] --file=example.csv`
 
-  `python gsheetnet.py [5, 10, 10, 1] --activation='relu' --file=mynet.csv`
+  `python gsheetnet.py [5,10,10,1] --activation='relu' --file=mynet.csv`
  
-  `python gsheetnet.py [28, 50, 10] False 'tanh' anotherfile.csv`
+  `python gsheetnet.py [28,50,10] False 'tanh' anotherfile.csv`
