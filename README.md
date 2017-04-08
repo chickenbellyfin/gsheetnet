@@ -6,6 +6,9 @@ work in Google Sheets.
 
 By default, all weight parameters are 0 and all biases are .5
 
+## Requirements
+* [fire](https://github.com/google/python-fire)
+
 ## Usage:
 ```
   python gsheetnet.py [layers] [args]
@@ -21,6 +24,10 @@ By default, all weight parameters are 0 and all biases are .5
 ```
 ## Examples:
 
- ` python gsheetnet.py [5, 10, 10, 1] --activation='relu' --file=mynet.csv`
+  example.csv:
+
+  `python gsheetnet.py [10,20,15,1] --file=example.csv`
+
+  `python gsheetnet.py [5, 10, 10, 1] --activation='relu' --file=mynet.csv`
  
   `python gsheetnet.py [28, 50, 10] False 'tanh' anotherfile.csv`
